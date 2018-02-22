@@ -21,12 +21,9 @@ char* longestCommonPrefix(char** strs, int strsSize)
 int main()
 {
     int a=0,b=0;
-    char* strIn[3];
-    strIn[0]="ab";
-    strIn[1]="aa";
-    strIn[2]="a";
+    char* strIn[]={"aa","ab","a"};
     printf("调用前\n");
-    char* output=longestCommonPrefix((char**)strIn,3);
+    char* output=longestCommonPrefix(strIn,3);
     printf("调用后\n");
     printf("%s",output);
     return 0;
